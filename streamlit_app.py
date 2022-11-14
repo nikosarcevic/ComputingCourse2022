@@ -15,8 +15,7 @@ mu = st.slider("mu",
               )
 
 sigma = st.slider("sigma",
-                  value=10,
-                  step=0.5)
+                  value=10)
 
 x = np.arange(start, stop, 0.01)
 y = sp.stats.norm.pdf(x, mu, sigma)

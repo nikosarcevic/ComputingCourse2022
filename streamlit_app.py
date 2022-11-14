@@ -4,18 +4,22 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 st.title("GaussApp")
-start = st.number_input("start",
-                        value=-50.)
 
-stop = st.number_input("stop",
-                       value=50.)
+with st.sidebar:
+  st.header("Choose your distribution paramteres here")
+  
+  start = st.number_input("start",
+                          value=-50.)
 
-mu = st.slider("mu",
-               value=0
-              )
+  stop = st.number_input("stop",
+                         value=50.)
 
-sigma = st.slider("sigma",
-                  value=10)
+  mu = st.slider("mu",
+                 value=0
+                )
+
+  sigma = st.slider("sigma",
+                    value=10)
 
 x = np.arange(start, stop, 0.01)
 y = sp.stats.norm.pdf(x, mu, sigma)

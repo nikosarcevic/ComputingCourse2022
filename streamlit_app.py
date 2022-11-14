@@ -12,7 +12,7 @@ stop = st.number_input("stop",
 
 mu = st.slider("mu",
                value=0.,
-               step=0.5)
+               step=1)
 
 sigma = st.slider("sigma",
                   value=10.,

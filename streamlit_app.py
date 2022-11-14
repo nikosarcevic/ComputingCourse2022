@@ -11,8 +11,8 @@ stop = st.number_input("stop",
                        value=50.)
 
 mu = st.slider("mu",
-               value=0.,
-               step=1)
+               value=0.
+              )
 
 sigma = st.slider("sigma",
                   value=10.,

@@ -3,7 +3,7 @@ import scipy as sp
 import matplotlib.pyplot as plt
 import streamlit as st
 
-st.title("GaussApp)
+st.title("GaussApp")
 start = st.number_input("start",
                         value=-50.)
 

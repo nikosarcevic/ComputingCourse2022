@@ -20,6 +20,11 @@ with st.sidebar:
 
   sigma = st.slider("sigma",
                     value=10)
+  
+  st.markdown("Niko Sarcevic")
+  st.markdown("github.com/nikosarcevic")
+  st.markdown("MAS2806-PHY2039 @Newcastle University")
+  st.markdown("November 2022")
 
 x = np.arange(start, stop, 0.01)
 y = sp.stats.norm.pdf(x, mu, sigma)

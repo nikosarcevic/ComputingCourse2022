@@ -6,7 +6,7 @@ import streamlit as st
 st.title("GaussApp")
 
 with st.sidebar:
-  st.header("Choose your distribution paramteres here")
+  st.header("Choose your distribution parameters here")
   
   start = st.number_input("start",
                           value=-50.)

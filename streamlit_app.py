@@ -36,7 +36,7 @@ ax.vlines(mu, ymin=0, ymax=np.max(y), color="k", lw=2, ls="--", label="mean")
 
 xfill = np.arange(mu-sigma, mu+sigma, 0.01)
 yfill = sp.stats.norm.pdf(xfill, mu, sigma)
-plt.fill_between(xfill, yfill, 0, alpha=0.5, color="orange")
+plt.fill_between(xfill, yfill, 0, alpha=0.7, color="orange")
 plt.legend()
 plt.show()
 
